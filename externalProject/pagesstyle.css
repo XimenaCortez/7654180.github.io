@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+/*Menu Formatting*/
+.drinks {
+    max-width: 100%;
+}
+.paestries {
+    max-width: 100%;
+}
+.drink h2 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 3rem;
+}
+.drink h3 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.5rem;
+}
+.eat h3 {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 1.5rem;
+}
+/*Services Formatting*/
+.collage {
+    display: flex;
+    flex-flow: row wrap;
+}
+.collage p {
+    font-family: "Instrument Sans", sans-serif;
+    color: #C96F6F;
+    font-weight: 600;
+}
+
+.collage div {
+    display: block;
+    flex: 0 1 25%;
+    max-width: 100%;
+    padding: 10px;
+}
+.collage h3 {
+    color: #A99ABD;
+    padding-top: 30px;
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 800;
+}
+
+.collage div img {
+    border-radius: 15px;
+    min-width: 100%;
+}
+
+.order img{
+    max-width: 125%;
+
+}
+p a {
+    color: #FFD238;
+}
+p a:visited {
+    color:#568366;
+}
+/*About Us Formatting*/
+.daisy{
+    float: left;
+    padding-left: 0px;  
+    padding-right: 10px;
+}
+/*Events Formatimng */
+.music {
+    float: left;
+    padding-left: 10px;  
+    padding-right: 5px;
+}
+.arrangements {
+    float: right;
+    padding-left: 10px;  
+    padding-right: 5px;
+}
+/* Utilities */
+.clear::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+    /* ----- */
+.blank::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.space::after {
+    content: "";
+    clear: both;
+    display: table;
+}
