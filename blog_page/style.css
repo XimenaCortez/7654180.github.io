@@ -1,0 +1,255 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap');/*Syne*/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');/* Figtree*/
+
+
+/*Color Palette*/
+/*PLAY BLUE: #364C84*/
+/*PERANO BLUE: #90B4E0*/
+/*MILK WHITE: #FFFDF5*/
+/*lIGHT GREEN: #F1F6CA*/
+/*MINDARO GREEN: #E7F1A8*/
+/*PINK: #F8D9DC*/
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+/*Header Section*/
+header {
+    background: #3A4F99;
+    padding: 3px;
+    color: #D8E873;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Syne", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 5rem;
+    letter-spacing: -6px;
+    translate: 0px 100px;
+}
+/*Main Section*/
+main {
+    background: #131B23;
+    display: grid;
+    grid-template-columns: 344px 1fr 300px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "sidepics entry play"
+    "sidepics data play"
+    ;
+    grid-gap: 2px; 
+}
+
+section {
+    padding: 15px;
+}
+
+/*Entry Body Section*/
+.entry {
+    grid-area: entry;
+    padding-top: 40px;
+}
+
+h2 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 800;
+    font-size: 35px;
+    color: #E7F1A8;
+}
+h3 {
+    color: #FFFDF5;
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+}
+
+.entry p {
+    font-family: "Figtree", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #E2E7F3;
+}
+.entry p span {
+    font-weight: 600;
+    color: #D8E873;
+}
+.entry img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 40px;
+    padding-bottom: 5px;
+    justify-content: left;
+}
+
+/*Left/Pics Section*/
+.sidepics {
+    grid-area: sidepics;
+}
+
+.sidepics img {
+    border-radius: 50%;
+    padding: 2px;
+    height: 100vh;
+    aspect-ratio: 1/1;
+
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation: 
+    3s linear 1s infinite alternate
+    rise,
+    24s linear 0s infinite psychedelic;
+}
+
+/*Animation*/
+@keyframes rise {
+    from {
+        transform: translateY(4vh);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+:root {
+    background: #364C84;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+img {
+    display: block;
+    max-width: 300px;
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /*width: 50%*/
+   /* border-radius: 60px;*/
+    /*margin-right: 50px; *}
+*/
+
+/*Responsive Table Section*/
+.data {
+    grid-area: data;
+    font-family: "Figtree", sans-serif;
+    text-align: left;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #3A4F99;
+    color: #FFFDF5;
+    font-family: "Syne", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+tr td {
+    background: #D8E873;
+    color: #364C84;
+    font-family: "Figtree", sans-serif;
+    font-weight: 600;
+
+}
+
+/*Playlist Section*/
+.play {
+    grid-area: play;
+    background: #D8E873;
+}
+.play h2 {
+    color: #131B23;
+}
+ol li {
+    font-family: "Figtree", sans-serif;
+    font-weight: 500;
+    color: #332924;
+}
+
+/*Footer Section*/
+footer {
+    font-family: "Syne", sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1px;
+    background: #131B23;
+    color: #E2E7F3;
+}
+
+@media (max-width: 1050px) {
+    main {
+        display: block;
+    }
+
+    .sidepics {
+        background: #131B23;
+    }
+
+    .sidepics img {
+        border-left: 4px solid #D8E873;
+        border-right: 4px solid #E2E7F3;
+    }
+    h2 {
+        color: #E2E7F3;
+        font-size: 2rem;
+    }
+    h3 {
+        color: #E7F1A8;
+    }
+
+    .entry {
+        padding-top: 70px;
+        background: #131B23;
+        color: #D8E873;
+    }
+    .entry img {
+        border-radius: 20px;
+        max-width: 100%;
+        border-radius: 40px;
+        padding-bottom: 5px;
+        justify-content: left;
+        
+    }
+    .data {
+        background: #131B23;
+    }
+    thead {
+        border: 1px solid #364C84;
+    }
+    
+    tr {
+        border: 1.2px solid #364C84;
+    }
+
+    .play {
+        background: #131B23;
+    }
+    .play h2 {
+        color: #E2E7F3;
+    }
+
+    ol li{
+        color: #D8E873;
+    }
+
+    footer {
+        color: #131B23;
+        background: #D8E873;
+    }
+}
