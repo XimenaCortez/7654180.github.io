@@ -1,0 +1,98 @@
+/* Only code CSS required for the recipe file */
+
+/*Color Scheme*/
+/*SAND: ECD4A1*/
+/*MILKY COFFEE: 9B7D61*/
+/*BLUE: 55738D*/
+/*GREEN: BDAB2E*/
+/*GOLDEN CLOVER: D7CE93*/
+/*PALE CREAM: E1CC96*/
+/*BUTTER COLOR: FCEBD0*/
+
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "ing inst"
+    "ing img"
+    "ing nut"
+    ;
+    grid-gap: 10Px;
+    padding-top: 5px;
+}
+/*Ingridients Section*/
+.ing{
+    grid-area: ing;
+    background: #C4C367;
+    color: #FCEBD0;
+}
+.ing h2{
+    color: #4B3535;
+    text-align: left;
+}
+.ing h3{
+    color: #3B3A17;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+.ing p {
+    color: #532439;
+}
+.ing li{
+    color: #4B3535;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    text-align: left;
+
+}
+/*Instructions Section*/
+.inst{
+    grid-area: inst;
+    background: #EFDCC3;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: left;
+}
+.inst ol li span {
+    font-weight: 550;
+    color: #2F2A35;
+  }
+
+/*Dish Image Section*/
+.img{
+    grid-area: img;
+}
+/* Nutrition formatting */
+/* section:nth-of-type(4) add this in front of all the code from the nutrution tutorial */
+.nut{
+    grid-area: nut;
+}
+.nut ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.nut ul li {
+    border: 1px solid #000;
+    margin: 5px;
+    display: inline-block;
+}
+
+.nut span {
+    display: block;
+    padding: 10px;
+    border: 1.5px solid #4B3535;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.nut ul li span:nth-of-type(1){
+    background: #E5DCB1;
+    color: #55738D;
+    font-weight: 900;
+}
